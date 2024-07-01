@@ -1,10 +1,15 @@
+@import './../../variables.scss';
+
 .header {
     position: absolute;
     display: block;
     width: 100%;
+    background: black;
 
     &__wrapper {
+        margin: 0 auto;
         padding: 25px 15px;
+        max-width: $main-wrapper;
         display: flex;
         justify-content: space-between;
     }
@@ -13,6 +18,7 @@
         height: 64px;
         width: 64px;
         animation: rotate 10s linear infinite;
+        fill: white;
     }
 
     &__burger {
@@ -32,7 +38,7 @@
         height: 4px;
         margin-bottom: 5px;
         position: relative;
-        background: black;
+        background: white;
         border-radius: 3px;
         z-index: 1;
         transform-origin: 4px 0px;
@@ -55,7 +61,6 @@
             ~ span:nth-last-child(3) {
                 opacity: 1;
                 transform: rotate(45deg) translate(-2px, -3px);
-                background: #232323;
             }
 
             ~ span:nth-last-child(1) {
@@ -80,15 +85,5 @@
         &:nth-child(2) {
             transform-origin: 0% 100%;
         }
-    }
-}
-
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
     }
 }

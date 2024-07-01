@@ -1,15 +1,23 @@
+@import '../../variables.scss';
+
 .hero {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:#1B2030 url(https://images.unsplash.com/photo-1571993142257-eae0b44cf0f1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ) 50% 0 no-repeat;
     color: white;
 
     &__title {
         margin: 0;
+        font-family: 'Kanit';
         font-size: 80px;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        font-size: 25px;
+        font-weight: 300;
     }
 
     &__icon {
@@ -20,6 +28,29 @@
     }
 
     &__icon-description {
+        padding-top: 10px;
+        font-size: 15px;
         font-style: italic;
+    }
+
+    &__planet {
+        position: absolute;
+        bottom: 40px;
+        z-index: -10;
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border-radius: 50%;
+        animation: shadowAnimation 4s infinite ease-in-out;
+        // box-shadow: 
+        //     inset 0 0 14px 0 white,
+        //     inset -40px -30px 60px 0 purple,
+        //     inset -40px -30px 70px 0 blue,
+        //     inset -40px -30px 100px 0 cyan,
+        //     inset -40px -30px 140px 0 powderblue,
+
+        //     0 0 20px 0 white,
+        //     10px 10px 20px 10px purple,
+        //     -10px -10px 20px 0 cyan;
     }
 }
