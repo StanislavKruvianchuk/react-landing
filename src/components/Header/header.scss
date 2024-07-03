@@ -23,6 +23,7 @@
 
     &__burger {
         position: relative;
+        // width: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -30,6 +31,28 @@
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
+    }
+
+    &__icons {
+        position: absolute;
+        top: 0;
+        left: 0;
+        // display: none;
+        flex-direction: column;
+        gap: 30px;
+        transform: translate(100px, 0);
+        transition: all .3s ease;
+
+        &--active {
+            display: flex;
+            transform: translate(0, 100px);
+        }
+    }
+
+    &__icons-item {
+        fill: $white-color;
+        width: 25px;
+        height: 25px;
     }
     
     &__burger span {
