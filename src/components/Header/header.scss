@@ -4,7 +4,7 @@
     position: absolute;
     display: block;
     width: 100%;
-    background: black;
+    background: $black-color;
 
     &__wrapper {
         margin: 0 auto;
@@ -18,7 +18,7 @@
         height: 64px;
         width: 64px;
         animation: rotate 10s linear infinite;
-        fill: white;
+        fill: $white-color;
     }
 
     &__burger {
@@ -38,7 +38,7 @@
         height: 4px;
         margin-bottom: 5px;
         position: relative;
-        background: white;
+        background: $white-color;
         border-radius: 3px;
         z-index: 1;
         transform-origin: 4px 0px;
@@ -72,9 +72,6 @@
                 transform: rotate(0deg) scale(0.2, 0.2);
             }
         }
-
-
-
     }
 
     &__burger-stick {

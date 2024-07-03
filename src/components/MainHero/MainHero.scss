@@ -21,8 +21,8 @@
     }
 
     &__icon {
-        height: 50px;
-        width: 50px;
+        height: 80px;
+        width: 80px;
         border-radius: 50%;
         object-fit: cover;
     }
@@ -36,21 +36,20 @@
     &__planet {
         position: absolute;
         bottom: 40px;
-        z-index: -10;
         width: 200px;
         height: 200px;
         background-color: white;
         border-radius: 50%;
+        transition: all 3s ease;
         animation: shadowAnimation 4s infinite ease-in-out;
-        // box-shadow: 
-        //     inset 0 0 14px 0 white,
-        //     inset -40px -30px 60px 0 purple,
-        //     inset -40px -30px 70px 0 blue,
-        //     inset -40px -30px 100px 0 cyan,
-        //     inset -40px -30px 140px 0 powderblue,
+        cursor: pointer;
 
-        //     0 0 20px 0 white,
-        //     10px 10px 20px 10px purple,
-        //     -10px -10px 20px 0 cyan;
+        &--stage-1 {
+            transform: translate(40vw);
+        }
+
+        &--stage-2 {
+            transform: translate(-40vw);
+        }
     }
 }

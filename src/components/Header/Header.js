@@ -1,4 +1,6 @@
 import { FaReact } from "react-icons/fa";
+import { IoPersonSharp } from "react-icons/io5";
+import { AiFillCalendar } from "react-icons/ai";
 import './header.scss'
 
 const Header = () => {
@@ -9,6 +11,11 @@ const Header = () => {
                     <FaReact className="header__logo-img" />
                 </a>
                 <div className="header__burger">
+                    <div className="header__icons"> 
+                        <IoPersonSharp />
+                        <AiFillCalendar />
+                    </div>
+
                     <input className="header__burget-input" type="checkbox" />
 
                     <span className="header__burger-stick"></span>
