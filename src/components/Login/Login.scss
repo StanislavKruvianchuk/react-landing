@@ -1,0 +1,36 @@
+@import './../../variables.scss';
+
+.login {
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__content {
+        width: 38%;
+    }
+
+    &__content-middle {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 10px 7px;
+        // border: 1px solid $white-color;
+        border-radius: 8px;
+        background: $white-color;
+
+        &::placeholder {
+            color: $black-color;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        padding: 15px 10px;
+        border: none;
+    }
+}

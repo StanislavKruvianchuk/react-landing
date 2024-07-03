@@ -1,6 +1,7 @@
 import { FaReact } from "react-icons/fa";
 import { IoPersonSharp } from "react-icons/io5";
 import { AiFillCalendar, AiFillSetting, AiFillSun } from "react-icons/ai";
+import { Link } from 'react-router-dom'
 import './header.scss'
 
 const Header = () => {
@@ -18,7 +19,8 @@ const Header = () => {
                 </a>
                 <div className="header__burger" onClick={showMenu}>
                     <div className="header__icons" id="icons-block"> 
-                        <IoPersonSharp className="header__icons-item" />
+                        <Link to="/login"><IoPersonSharp className="header__icons-item" /></Link>
+                        
                         <AiFillCalendar className="header__icons-item" />
                         <AiFillSun className="header__icons-item"/>
                         <AiFillSetting className="header__icons-item" />

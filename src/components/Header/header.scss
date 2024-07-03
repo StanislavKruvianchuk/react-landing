@@ -1,7 +1,7 @@
 @import './../../variables.scss';
 
 .header {
-    position: absolute;
+    position: relative;
     display: block;
     width: 100%;
     background: $black-color;
@@ -12,6 +12,7 @@
         max-width: $main-wrapper;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &__logo-img {
@@ -23,7 +24,8 @@
 
     &__burger {
         position: relative;
-        // width: 40px;
+        width: 40px;
+        height: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -45,7 +47,7 @@
 
         &--active {
             display: flex;
-            transform: translate(0, 100px);
+            transform: translate(5px, 60px);
         }
     }
 
