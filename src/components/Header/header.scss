@@ -108,4 +108,11 @@
             transform-origin: 0% 100%;
         }
     }
+
+
+    @media screen and (max-width: $laptop) {
+        &__wrapper {
+            padding: 15px;
+        }
+    }
 }
