@@ -10,7 +10,7 @@ const Login = () => {
     }
 
     return (
-        <div className="login">
+        <div className="login main-wrapper">
             <div className="login__wrapper">
                 <div className="login__content">
                     <div className="login__content-top">

@@ -12,7 +12,7 @@ const Header = () => {
 
 
     return (
-        <header className="header">
+        <header className="header main-wrapper">
             <div className="header__wrapper">
                 <a className="header__logo" href="/" aria-label="Logo">
                     <FaReact className="header__logo-img" />

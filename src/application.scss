@@ -1,1 +1,26 @@
-@import './fonts.scss'
+@import './fonts.scss';
+@import 'variables.scss';
+@import 'reset.scss';
+
+.main-wrapper {
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: $main-wrapper;
+}
+
+.h1 {
+    font-family: "Kanit";
+    font-size: 65px;
+    line-height: 1.2;
+    font-weight: 500
+}
+
+.btn {
+    width: fit-content;
+    padding: 25px 30px;
+    color: $white-color;
+    font-size: 20px;
+    border-radius: 10px;
+    background: $black-color;
+}

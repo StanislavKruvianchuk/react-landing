@@ -4,12 +4,10 @@
     position: relative;
     display: block;
     width: 100%;
-    background: $black-color;
+    background: transparent;
 
     &__wrapper {
-        margin: 0 auto;
-        padding: 25px 15px;
-        max-width: $main-wrapper;
+        padding: 25px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -19,7 +17,7 @@
         height: 64px;
         width: 64px;
         animation: rotate 10s linear infinite;
-        fill: $white-color;
+        fill: $black-color;
     }
 
     &__burger {
@@ -52,7 +50,7 @@
     }
 
     &__icons-item {
-        fill: $white-color;
+        fill: $black-color;
         width: 25px;
         height: 25px;
     }
@@ -63,7 +61,7 @@
         height: 4px;
         margin-bottom: 5px;
         position: relative;
-        background: $white-color;
+        background: $black-color;
         border-radius: 3px;
         z-index: 1;
         transform-origin: 4px 0px;

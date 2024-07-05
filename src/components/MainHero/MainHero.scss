@@ -1,23 +1,15 @@
 @import '../../variables.scss';
 
 .hero {
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
 
-    &__title {
-        margin: 0;
-        font-family: 'Kanit';
-        font-size: 80px;
-        font-weight: 700;
-    }
-
-    &__subtitle {
-        font-size: 25px;
-        font-weight: 300;
+    &__left {
+        max-width: 530px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
     }
 
     &__icon {
@@ -51,5 +43,9 @@
         &--stage-2 {
             transform: translate(-40vw);
         }
+    }
+
+    &__subscription {
+        font-weight: 300;
     }
 }
